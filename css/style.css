@@ -36,13 +36,13 @@ small {
   top: 0;
   right: 0;
   padding: 1em;
-  color: white;
+  color: #fff;
   text-align: center;
   font-family: sans-serif; }
 
 /* line 29, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
 a {
-  color: white; }
+  color: #fff; }
 
 /* line 33, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
 .pagination {
@@ -57,13 +57,13 @@ a {
     width: 16px;
     height: 16px;
     margin: 0 4px;
-    border: solid 2px white;
+    border: solid 2px #fff;
     border-radius: 100%;
     transition-duration: 0.25s;
     transition-property: background; }
     /* line 50, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
     .pagination li:hover {
-      background: white; }
+      background: #fff; }
       /* line 53, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
       .pagination li:hover span {
         /* Show the tooltip when hovered over */
@@ -82,7 +82,7 @@ a {
       top: 100%;
       margin-top: 16px;
       padding: 8px;
-      background: white;
+      background: #fff;
       opacity: 0;
       visibility: hidden;
       -webkit-transform: translateX(-50%) translateY(-10px);
@@ -100,7 +100,7 @@ a {
         height: 0;
         border-style: solid;
         border-width: 0 6px 6px 6px;
-        border-color: transparent transparent white transparent;
+        border-color: transparent transparent #fff transparent;
         margin-left: -4px; }
 
 @-webkit-keyframes circle {
