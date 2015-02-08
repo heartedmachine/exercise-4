@@ -1,0 +1,162 @@
+@-webkit-keyframes showThumbnail {
+  /* line 3, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  16.65%, 83.35% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px); }
+
+  /* line 9, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px); } }
+
+@keyframes showThumbnail {
+  /* line 3, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  16.65%, 83.35% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px); }
+
+  /* line 9, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(10px);
+            transform: translateX(-50%) translateY(10px); } }
+
+/* line 15, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+body {
+  background: #92BE96; }
+
+/* line 19, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  font-family: sans-serif; }
+
+/* line 29, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+a {
+  color: white; }
+
+/* line 33, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+.pagination {
+  position: relative;
+  top: 20px;
+  text-align: center; }
+  /* line 38, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  .pagination li {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border: solid 2px white;
+    border-radius: 100%;
+    transition-duration: 0.25s;
+    transition-property: background; }
+    /* line 50, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .pagination li:hover {
+      background: white; }
+      /* line 53, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+      .pagination li:hover span {
+        /* Show the tooltip when hovered over */
+        -webkit-animation-name: showThumbnail;
+                animation-name: showThumbnail;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s; }
+    /* line 61, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .pagination li span {
+      /* Thumbnail */
+      display: inline-block;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      margin-top: 16px;
+      padding: 8px;
+      background: white;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateX(-50%) translateY(-10px);
+          -ms-transform: translateX(-50%) translateY(-10px);
+              transform: translateX(-50%) translateY(-10px); }
+      /* line 74, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+      .pagination li span:after {
+        /* Thumbnail Tip */
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -6px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent white transparent;
+        margin-left: -4px; }
+
+@-webkit-keyframes circle {
+  /* line 94, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  50% {
+    -webkit-transform: scale(1.26923);
+            transform: scale(1.26923); } }
+
+@keyframes circle {
+  /* line 94, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  50% {
+    -webkit-transform: scale(1.26923);
+            transform: scale(1.26923); } }
+
+@-webkit-keyframes initials {
+  /* line 100, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  50% {
+    -webkit-transform: translateY(-8px) translateZ(0);
+            transform: translateY(-8px) translateZ(0); } }
+
+@keyframes initials {
+  /* line 100, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  50% {
+    -webkit-transform: translateY(-8px) translateZ(0);
+            transform: translateY(-8px) translateZ(0); } }
+
+/* line 105, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+.ild-ident {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+  /* line 110, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+  .ild-ident svg {
+    overflow: visible;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
+    /* line 114, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .ild-ident svg .circle-holder {
+      -webkit-transform: translate(-7px, -7px);
+          -ms-transform: translate(-7px, -7px);
+              transform: translate(-7px, -7px); }
+    /* line 118, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .ild-ident svg .circle {
+      -webkit-transform: translate(7px, 7px);
+          -ms-transform: translate(7px, 7px);
+              transform: translate(7px, 7px);
+      fill: #2A7831; }
+    /* line 124, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .ild-ident svg.active .i {
+      -webkit-animation: initials 0.4s ease-in-out;
+              animation: initials 0.4s ease-in-out; }
+    /* line 128, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .ild-ident svg.active .l {
+      -webkit-animation: initials 0.4s 0.2s ease-in-out;
+              animation: initials 0.4s 0.2s ease-in-out; }
+    /* line 132, /Users/scribble-lies/Documents/Graphic Design VI/Web Development/Week 6/exercise-4/scss/components/main */
+    .ild-ident svg.active .circle {
+      -webkit-animation: circle 0.5s 0.1s ease-in-out;
+              animation: circle 0.5s 0.1s ease-in-out; }

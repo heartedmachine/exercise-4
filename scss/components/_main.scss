@@ -1,0 +1,137 @@
+@keyframes showThumbnail {
+  16.65%,
+  83.35% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+body {
+  background: #92BE96;
+}
+
+small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+}
+
+.pagination {
+  position: relative;
+  top: 20px;
+  text-align: center;
+
+  li {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    border: solid 2px white;
+    border-radius: 100%;
+    transition-duration: .25s;
+    transition-property: background;
+
+    &:hover {
+      background: white;
+
+      span {
+        /* Show the tooltip when hovered over */
+        animation-name: showThumbnail;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+      }
+    }
+
+    span {
+      /* Thumbnail */
+      display: inline-block;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      margin-top: 16px;
+      padding: 8px;
+      background: white;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-50%) translateY(-10px);
+
+      &:after {
+        /* Thumbnail Tip */
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -6px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent white transparent;
+        margin-left: -4px;
+      }
+    }
+  }
+}
+
+
+@keyframes circle {
+  50% {
+    transform: scale(1.26923077);
+  }
+}
+
+@keyframes initials {
+  50% {
+    transform: translateY(-8px) translateZ(0);
+  }
+}
+
+.ild-ident {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  svg {
+    overflow: visible;
+    transform: translateZ(0);
+
+    .circle-holder {
+      transform: translate(-7px, -7px);
+    }
+
+    .circle {
+      transform: translate(7px, 7px);
+      fill: #2A7831;
+    }
+
+    &.active {
+      .i {
+        animation: initials .4s ease-in-out;
+      }
+
+      .l {
+        animation: initials .4s .2s ease-in-out;
+      }
+
+      .circle {
+        animation: circle .5s .1s ease-in-out;
+      }
+    }
+  }
+}
