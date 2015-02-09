@@ -29,8 +29,8 @@ a {
 
 h2 {
   font-weight: 100;
-  padding-top: .9em;
-  margin: .125em .125em .83em 0;
+  padding-top: .2em;
+  margin: .125em .125em .5em 0;
   border-bottom: 1px solid $border-light;
   text-align: center;
   color: $blue-bg;
@@ -45,7 +45,7 @@ p {
 .help-tag {
   font-size: 8pt;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 0 0 0;
   margin: 0;
 }
 
@@ -62,7 +62,7 @@ i {
 }
 
 .cody-info{
-  margin-top: 0;
+  margin: 0 0 5em 0;
   padding: 5px 15px 10px 15px;
   background-color: $white;
 }
