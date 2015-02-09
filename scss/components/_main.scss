@@ -13,7 +13,7 @@
 }
 
 body {
-  background: #49c0c1;
+  background: $blue-bg;
   font-family: 'Helvetica', arial, sans-serif;
 }
 
@@ -31,14 +31,57 @@ a {
   color: $white;
 }
 
+h2 {
+  font-weight: 100;
+  padding-top: .9em;
+  margin-top: .125em;
+  border-bottom: 1px solid $border-light;
+  text-align: center;
+  color: $dark-blue;
+}
+
+p {
+  font-weight: 100;
+  text-align: justify;
+  font-size: 11.2pt;
+}
+
+.help-tag {
+  font-size: 9pt;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+i {
+  color: $blue-bg;
+  font-size: 15pt;
+}
+
+.meet-cody {
+  margin-top: 0;
+  position: absolute;
+  top: 10px;
+  left: 330px;
+  background-color: $white;
+}
+
+.cody-info{
+  margin-top: 0;
+  padding: 5px 15px 5px 15px;
+  width: 300px;
+}
+
 .border {
   border: 5px solid $white;
-  flaot: left;
+  float: left;
 }
 
 .pagination {
   position: relative;
-  top: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 .25em 0;
   text-align: center;
 
   li {
@@ -48,13 +91,13 @@ a {
     width: 16px;
     height: 16px;
     margin: 0 4px;
-    border: solid 2px $white;
+    border: solid 2px $blue-bg;
     border-radius: 100%;
     transition-duration: .25s;
     transition-property: background;
 
     &:hover {
-      background: $white;
+      background: $blue-bg;
 
       span {
         /* Show the tooltip when hovered over */
@@ -123,7 +166,7 @@ a {
 
     .circle {
       transform: translate(7px, 7px);
-      fill: #2A7831;
+      fill: $dark-blue;
     }
 
     &.active {
@@ -141,3 +184,4 @@ a {
     }
   }
 }
+
